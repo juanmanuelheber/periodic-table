@@ -1,0 +1,12 @@
+$opacityFrom: .3;
+$overlayFrom: rgba(0,0,0,$opacityFrom);
+$opacityTo: 1;
+$overlayTo: rgba(0,0,0,$opacityTo);
+
+#container-layout{
+    height: 100vh;
+    overflow-y: auto;
+    background: radial-gradient(circle,  $overlayFrom 0%, $overlayTo 100%),url('./background.webp') no-repeat fixed;
+    background-size: cover;
+    position: relative;
+}
