@@ -8,15 +8,15 @@ export const ElementCard = ({...props}) => {
     const getNuetrons = Math.round(roundOneDecimal(props.atomicMass) - props.atomicNumber);
 
     const requiredData = {
-        block: props.block,
-        period: props.period,
-        group: props.group,
         symbol: props.symbol,
         atomicNumber: props.atomicNumber,
         atomicMass: props.atomicMass,
         protons: props.atomicNumber,
         electrons: props.atomicNumber,
         neutrons: getNuetrons,
+        block: props.block,
+        period: props.period,
+        group: props.group,
         groupBlock: props.groupBlock,
         standardState: props.standardState,
         bondingType: props.bondingType,
@@ -26,7 +26,7 @@ export const ElementCard = ({...props}) => {
     }
   return (
       <div id='single-element'>
-        <div className="card w-75 p-5">
+        <div className="card w-75 p-2 p-md-5">
             <div className="row">
                 {Object.entries(requiredData).map(([key,value])=>(
                     <ItemInfo key={`property-${key}`} name={key} value={value} />

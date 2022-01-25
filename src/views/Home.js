@@ -6,7 +6,7 @@ import { Table } from '../components/Table/Table'
 export const Home = () => {   
     return (
         <>
-            <PageTitle title='Tabla Periódica' />
+            <PageTitle title='Periodic Table' />
             <MainContainer>
                 <Table />
             </MainContainer>

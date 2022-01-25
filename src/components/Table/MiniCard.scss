@@ -1,5 +1,5 @@
 .container-element{
-    height: 75px;
+    aspect-ratio: 1/1;
     position: relative;
     overflow: hidden;
     font-size: .75rem;
@@ -9,7 +9,7 @@
     }
     .element{
         &-symbol{
-            font-size: 2rem;
+            font-size: 2vw;
             font-weight: bold;
         }
         &-name{

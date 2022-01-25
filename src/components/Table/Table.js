@@ -11,7 +11,7 @@ export const Table = () => {
     if (loading) { return <Loader /> }  
 
   return (
-    <div className='table'>
+    <div className='table px-1 px-md-3'>
         {data.length>0 && data.map(elem=>(
             <MiniCard key={elem.symbol} {...elem} /> 
         ))}
